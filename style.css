@@ -1,0 +1,188 @@
+/*CSS Reset*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*CSS Variables*/
+:root {
+  --navbar-height: 59px;
+}
+
+/*Navigation Bar*/
+#navbar {
+  position: relative;
+  top: 0px;
+}
+#navbar::before {
+  background-color: black;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0.45;
+  height: 100%;
+  width: 100%;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+  height: 40px;
+}
+
+#navbar ul li a {
+  color: white;
+  display: block;
+  font-size: 1.5rem;
+  align-items: center;
+  padding: 3px 22px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-family: "PT Serif", serif;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+/*Home Section*/
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 250px;
+  height: 508px;
+  justify-content: center;
+  align-items: center;
+}
+
+#home::before {
+  background: url("../img/homebg.jpg") no-repeat center center/cover;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0.85;
+  height: 562px;
+  width: 100%;
+  z-index: -2;
+}
+
+#home h1 {
+  color: white;
+  align-items: center;
+}
+
+#home p {
+  color: white;
+  align-items: center;
+  font-size: 1.5rem;
+  font-family: "Dancing Script", cursive;
+}
+/*Services Section*/
+
+#services-container {
+  align-items: center;
+}
+
+#services {
+  margin: 16px;
+  display: flex;
+}
+
+#services .box {
+  border: 2px solid brown;
+  text-align: center;
+  padding: 5px;
+  margin: 6px;
+  border-radius: 25px;
+  background-color: #dbd8d8;
+  box-shadow: 7px 7px rgb(145, 142, 142);
+  font-family: "Dancing Script", cursive;
+}
+
+#services .box img {
+  height: 150px;
+  display: block;
+  margin: auto;
+  border: none;
+  border-radius: 20px;
+}
+
+/*Utility Classes*/
+
+.h-primary {
+  font-size: 3.8rem;
+  padding: 12px;
+  font-family: "PT Serif", serif;
+}
+
+.h-primary-center {
+  font-size: 3.2rem;
+  padding: 12px;
+  font-family: "PT Serif", serif;
+  text-align: center;
+}
+
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: rgb(70, 59, 169);
+  margin: 20px;
+  font-size: 1.5rem;
+  border-radius: 13px;
+  color: white;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  box-shadow: 2px 5px #999;
+}
+
+.btn:hover {
+  background-color: wheat;
+  color: black;
+}
+
+.btn:active {
+  background-color: wheat;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.h-secondary-center {
+  font-size: 2.8rem;
+  padding: 12px;
+  font-family: "PT Serif", serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/*Buttons for Services*/
+.btn-services {
+  padding: 6px 20px;
+  border: 2px solid white;
+  margin: 20px;
+  font-size: 1.5rem;
+  border-radius: 13px;
+  color: black;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  box-shadow: 2px 5px #999;
+}
+
+.btn-services:hover {
+  background-color: #ca8080;
+  color: black;
+  background-image: linear-gradient(to right, rgba(233, 196, 196, 0), rgb(143, 140, 140));
+}
+
+.btn-services:active {
+  background-color: #ffd4d4;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
